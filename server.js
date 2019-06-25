@@ -12,7 +12,7 @@ const db = knex({
     client: 'pg',
     connection: {
         // aka local host 
-        host: '127.0.0.1',
+        host: 'postgresql-pointy-44111',
         user: 'spencerhemstreet',
         password: '',
         database: 'face-detector'
