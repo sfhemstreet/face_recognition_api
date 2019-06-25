@@ -12,10 +12,8 @@ const db = knex({
     client: 'pg',
     connection: {
         // aka local host 
-        host: 'postgresql-pointy-44111',
-        user: 'spencerhemstreet',
-        password: '',
-        database: 'face-detector'
+        host: process.env.DATABASE_URL,
+        ssl: true,
     }
 });
 /*
